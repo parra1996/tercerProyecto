@@ -52,7 +52,7 @@ body {
     color: rgb(104, 241, 104);
 
     font-weight: bolder;
-    font-size:8em;
+    font-size:6em;
     font-style: italic;
 
     transition: 1s;
@@ -70,6 +70,39 @@ body {
     left:.5em;
     top:35em;
 }
+
+#avanzar {
+    background-color:transparent;
+    background-size: cover;
+    color:whitesmoke;
+
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+
+    border-style: solid;
+
+    position:absolute;
+    top: 22em;
+
+    height: 4em;
+    width: 6em;
+
+    border-radius: 1em;
+}
+
+#avanzar:hover {
+
+    
+    background-image: url(/IMG/humito.gif);
+    height: 6em;
+    width: 7em;
+
+    transition: 1s;
+    
+    border-style: unset;
+}
+
 
 
 .designScreen2 {
