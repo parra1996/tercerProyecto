@@ -14,15 +14,21 @@ body {
     width: 100vw;
 
     display: flex;
-
-    justify-content: center;
+  
+    justify-content:center;
     align-items: center;
+   
 }
 
 #pantalla1 { 
     background-image: url(/IMG/drift.gif);
 
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #welcome {
@@ -30,6 +36,11 @@ body {
 
     font-weight: bold;
     font-size: 3em;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 #welcome:hover {
@@ -44,8 +55,22 @@ body {
     font-size:8em;
     font-style: italic;
 
-    transition: 2s;
+    transition: 1s;
+
+    border-radius: 1em;
+    
+
 }
+
+#motor {
+    height: 2em;
+    width: 15em;
+
+    position:absolute;
+    left:.5em;
+    top:35em;
+}
+
 
 .designScreen2 {
     background-color: red;
