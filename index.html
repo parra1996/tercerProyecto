@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carRacing</title>
+    <title>toughRacing</title>
 
-    <link href="CSS/style.css">
+    <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
     
+    <section id="pantalla1" onclick="cambiaPantalla(2)">
+        <div class="designScreen1">
+            <p id="welcome">Welcome to TOUGH RACING</p>
+        </div>
+    </section>
+
+    <section id="pantalla2" style="display:none" onclick="cambiaPantalla(3)">
+        <div class="designScreen2"></div>
+    </section>
+
+    <section id="pantalla3" style="display:none" onclick="cambiaPantalla(4)">
+        <div class="designScreen3"></div>
+    </section>
+
+    <section id="pantalla4" style="display:none" onclick="cambiaPantalla(1)">
+        <div class="designScreen4"></div>
+    </section>
 
 
+    <script src="JS/racers.js"></script>
     <script src="JS/main.js"></script>
 </body>
 </html>

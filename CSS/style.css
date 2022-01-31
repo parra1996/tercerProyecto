@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.designScreen1 {
+    
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#pantalla1 { 
+    background-image: url(/IMG/drift.gif);
+
+    background-size: cover;
+}
+
+#welcome {
+    color: white;
+
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#welcome:hover {
+
+    background-image: url(/IMG/humo.gif);
+    background-size: cover;
+
+    text-align: center;
+    color: rgb(104, 241, 104);
+
+    font-weight: bolder;
+    font-size:8em;
+    font-style: italic;
+
+    transition: 2s;
+}
+
+.designScreen2 {
+    background-color: red;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.designScreen3 {
+    background-color: black;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.designScreen4 {
+    background-color: violet;
+
+    height: 100vh;
+    width: 100vw;
+}
