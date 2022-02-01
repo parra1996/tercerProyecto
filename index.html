@@ -10,11 +10,12 @@
 </head>
 <body>
     
+    <!--pagina de bienvenida-->
     <section id="pantalla1">
 
         <div class="designScreen1">
 
-            <div id ="avanzar" type="button" onclick="cambiaPantalla(2)"><p id="quitar">Pulsa aqui para avanzar</p></div>
+            <div id ="avanzar" type="button" onclick="cambiaPantalla(2)">pulsa aqui para avanzar</div>
 
             <audio id="motor" controls loop src="MP3/AUTORACESP01_81.mp3" ></audio>
 
@@ -23,19 +24,32 @@
         </div>
 
     </section>
-
+    <!-- pagina de seleccion de carros-->
     <section id="pantalla2" style="display:none" onclick="cambiaPantalla(3)">
+        <div class="cuerpo">
 
-        <div class="designScreen2"></div>
+            <div class="designScreen2">
+               
+                <img id="camaro" class="carros" src="IMG/camaro2.jpg">
+                    <div class="camaro1"></div>
+                </img>
+                <img id="tesla" class="carros" src="IMG/tesla3.jpg">
+                <img id="agera" class="carros" src="IMG/agera2.jpg">
+                <img id="bugatti" class="carros" src="IMG/bugatti4.jpg">
+            </div>
+
+         <div id="seleccion" class="designScreen2"></div>
+
+        </div>
 
     </section>
-
+    <!--pagina de la carrera-->
     <section id="pantalla3" style="display:none" onclick="cambiaPantalla(4)">
 
         <div class="designScreen3"></div>
 
     </section>
-
+    <!--pagina de ganador -->
     <section id="pantalla4" style="display:none" onclick="cambiaPantalla(1)">
 
         <div class="designScreen4"></div>
