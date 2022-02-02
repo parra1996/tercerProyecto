@@ -34,3 +34,34 @@ const cambiaPantalla = (cambio) => {
 
 
 }
+
+
+const selectCar = (nCoche) => {
+    
+    if(team1 == ""){
+        team1 = allCars[nCoche];
+        let cochePrimero = document.getElementById(nCoche);
+        let datosCoche = document.getElementById("data"+ 1);
+        //una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
+        cochePrimero.disabled = true;
+        cochePrimero.classList.add("carSelected");
+        datosCoche.innerHTML = `${team1.marca}`;
+    
+        
+    } else if (team2 == ""){
+        team2 = allCars[nCoche];
+        let cocheSegundo = document.getElementById(nCoche);
+        cocheSegundo.disabled = true;
+        cocheSegundo.classList.add("carSelected");
+
+        console.log(team1,team2);
+
+        //una vez he escogido los dos coches.........
+
+        setTimeout(()=>{
+            cambiaPantalla(3);
+        },2500);
+    }
+} 
+
+

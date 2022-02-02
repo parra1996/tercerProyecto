@@ -25,30 +25,41 @@
 
     </section>
     <!-- pagina de seleccion de carros-->
-    <section id="pantalla2" style="display:none" onclick="cambiaPantalla(3)">
+
+    <section id="pantalla2" style="display:none" >
 
         <div class="cuerpo">
 
             <div class="designScreen2">
                
-                <div class="camaroDiv">
-                    <img id="camaro" class="carros" src="IMG/camaro2.jpg"></img>
-                    <img id="camaroHover" src="IMG/camaro.jpg" style="display: none;">
+                <div class="camaroDiv center">
+                    <img id="camaro" class="carros" src="IMG/camaro2.jpg">    
+                    <img id="camaro2" class="camaroGif" src="/IMG/camaro.jpg">
                 </div>
                 
-                <!-- <img id="camaro" class="carros" src="IMG/camaro2.jpg"></img> -->
+             
+                <div class="teslaDiv">
+                    <img id="tesla" class="carros" src="IMG/tesla3.jpg">
+                    <img class="teslaGif" src="IMG/tesla.jpg">
+                </div>
 
-                <img id="tesla" class="carros" src="IMG/tesla3.jpg">
-                 
-                <img id="agera" class="carros" src="IMG/agera2.jpg">
+                <div class="ageraDiv">
+                    <img id="agera" class="carros" src="IMG/agera2.jpg">
+                    <img class="ageraGif" src="IMG/agera.jpg">
+                </div>
 
-                <img id="bugatti" class="carros" src="IMG/bugatti4.jpg">
+                <div class="bugattiDiv">
+                     <img id="bugatti" class="carros" src="IMG/bugatti4.jpg">
+                     <img class="bugattiGif" src="IMG/bugatti.jpg">
+                </div>
 
             </div>
 
          <div id="seleccion" class="designScreen2">
 
              <p>Select your car</p>
+
+             <div id ="avanzar2" type="button" onclick="cambiaPantalla(3)"><p>pulsa aqui para avanzar</p></div>
 
          </div>
 

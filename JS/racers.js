@@ -32,8 +32,8 @@ let coche4 = new Coche("Chiron","Bugatti",299,1750,90,"Diesel");
 /////genero un traductor/ diccionario de js
 
 let allCars = {
-    1 :coche1,
-    2: coche2,
+    1 : coche1,
+    2 : coche2,
     3 : coche3,
     4 : coche4
 }
