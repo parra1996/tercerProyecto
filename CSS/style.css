@@ -58,8 +58,6 @@ body {
     transition: 1s;
 
     border-radius: 1em;
-    
-
 }
 
 #motor {
@@ -90,6 +88,7 @@ body {
 
     
     background-image: url(/IMG/humito.gif);
+    background-size: cover;
     height: 6em;
     width: 7em;
 
@@ -98,8 +97,9 @@ body {
     border-style: unset;
 }
 
-
-
+#avanzar:hover p{
+    opacity: 0;
+}
 /* PAGINA DE SELECCION DE CARROS */
 
 .cuerpo {
@@ -121,34 +121,63 @@ body {
     height: 70vh;
     width: 100vw;
 }
-
-.camaro1 {
-    background-color: white;
-    margin:1em;
+.camaroDiv {
     height: 17em;
     width: 17em;
-
-    border-radius: 1em;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .carros {
     background-size: cover;
 
-    margin:1em;
+    margin:1em ;
     height: 17em;
     width: 17em;
 
     border-radius: 1em;
 }
+/* intenando arreglr la imagen*/
+#camaroDiv:hover {
 
-
-.carros:hover{
-    background-image: url(/IMG/camaro.jpg);
-    background-size: cover;
-
-    transition: 2s;
+    width: 20em;
+    height: 20em;
+    
+    border-radius: 1em;
+    display: none;
 }
+#camaroHover:hover {
+
+    width: 20em;
+    height: 20em;
+    
+    border-radius: 1em;
+    display: flex;
+}
+
+#tesla:hover {
+    width: 20em;
+    height: 20em;
+    
+    border-radius: 1em;
+}
+
+#agera:hover {
+    width: 20em;
+    height: 20em;
+    
+    border-radius: 1em;
+}
+
+#bugatti:hover {
+    width: 20em;
+    height: 20em;
+    
+    border-radius: 1em;
+}
+
 
 #seleccion {
     background-color: rgba(255, 192, 203, 0.658);

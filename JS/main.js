@@ -2,8 +2,8 @@
 //Funciones
 
 const cleanGame = () => {
-    team1 = [];
-    team2 = [];
+    team1 = "";
+    team2 = "";
     ganador = "";
 }
 

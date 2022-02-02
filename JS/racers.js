@@ -29,13 +29,19 @@ let coche2 = new Coche("Roadster","Tesla",350,1900,90,"Electrico");
 let coche3 = new Coche("Agera"," Koenigsegg",270,2300,55,"Gasolina");
 let coche4 = new Coche("Chiron","Bugatti",299,1750,90,"Diesel");
 
+/////genero un traductor/ diccionario de js
+
+let allCars = {
+    1 :coche1,
+    2: coche2,
+    3 : coche3,
+    4 : coche4
+}
 
 //Generando variables básicas de entorno
 
-let allCars = [coche1,coche2,coche3,coche4];
+let team1 = "";
 
-let team1 = [];
-
-let team2 = [];
+let team2 = "";
 
 let ganador = "";
