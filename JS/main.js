@@ -34,6 +34,11 @@ const cambiaPantalla = (cambio) => {
 
 
 }
+ let welcome = document.getElementById("welcome");
+
+ setTimeout(() => {
+   welcome.innerHTML= "Welcome to Tough Racing";
+}, 2000);
 
 
 const selectCar = (nCoche) => {
@@ -46,7 +51,7 @@ const selectCar = (nCoche) => {
         //una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
         cochePrimero.onclick = "";
         cochePrimero.classList.add("carSelected");
-        datosCoche.innerHTML = `${team1.marca}`;
+        datosCoche.innerHTML = `${team1.marca}<br>${team1.modelo}<br>${team1.velocidad}<br>${team1.peso}<br>${team1.frenada}<br>${team1.combustible}`;
         
         
     } else if (team2 == ""){
@@ -56,7 +61,7 @@ const selectCar = (nCoche) => {
 
         cocheSegundo.onclick = "";
         cocheSegundo.classList.add("carSelected");
-        datosCoche.innerHTML = `${team2.marca}`;
+        let estadisticas = datosCoche.innerHTML = `${team2.marca}<br>${team2.modelo}<br>${team2.velocidad}<br>${team2.peso}<br>${team2.frenada}<br>${team2.combustible}`;
         
     }
   
