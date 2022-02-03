@@ -147,6 +147,10 @@ body {
     filter: grayscale(100%);
 }
 
+.disponible {
+    display: block;
+}
+
 .dataCar {
     font-size: 3em;
 }

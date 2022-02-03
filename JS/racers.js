@@ -25,9 +25,9 @@ class Coche {
 //Instanciando corredores...
 
 let coche1 = new Coche("Modelo: Camaro","Marca: Chevrolet","Velocidad: 280","Peso: 2000","Frenada: 50","Gasolina")
-let coche2 = new Coche("Modelo: roadster","Marca: Tesla","Velocidad: 350","Peso: 1900","Frenada: 90","Electrico");
-let coche3 = new Coche("Modelo: agera","Marca: enigsegg","Velocidad: 270","Peso: 2300","Frenada: 55","Gasolina");
-let coche4 = new Coche("Modelo: chiron","Marca: gatti","Velocidad: 299","Peso: 1750","Frenada: 90","Diesel");
+let coche2 = new Coche("Modelo: Roadster","Marca: Tesla","Velocidad: 350","Peso: 1900","Frenada: 90","Electrico");
+let coche3 = new Coche("Modelo: Agera","Marca: enigsegg","Velocidad: 270","Peso: 2300","Frenada: 55","Gasolina");
+let coche4 = new Coche("Modelo: Chiron","Marca: gatti","Velocidad: 299","Peso: 1750","Frenada: 90","Diesel");
 
 /////genero un traductor/ diccionario de js
 

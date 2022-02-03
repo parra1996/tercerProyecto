@@ -68,8 +68,8 @@ const selectCar = (nCoche) => {
     // falta arreglar, linea 66 fallando
     if(team1 != "" && team2 != ""){
         let avance = document.getElementById("avanzar2")
-        avance.classList.remove('display:none');
-        console.log("holi")
+        avance.classList.add("disponible");
+        console.log(avance)
         
 
      }else {
