@@ -24,10 +24,10 @@ class Coche {
 
 //Instanciando corredores...
 
-let coche1 = new Coche("Camaro","Chevrolet",280,2000,50,"Gasolina")
-let coche2 = new Coche("Roadster","Tesla",350,1900,90,"Electrico");
-let coche3 = new Coche("Agera"," Koenigsegg",270,2300,55,"Gasolina");
-let coche4 = new Coche("Chiron","Bugatti",299,1750,90,"Diesel");
+let coche1 = new Coche("camaro","Chevrolet",280,2000,50,"Gasolina")
+let coche2 = new Coche("roadster","Tesla",350,1900,90,"Electrico");
+let coche3 = new Coche("agera"," Koenigsegg",270,2300,55,"Gasolina");
+let coche4 = new Coche("chiron","Bugatti",299,1750,90,"Diesel");
 
 /////genero un traductor/ diccionario de js
 
