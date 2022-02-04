@@ -117,7 +117,9 @@ body {
 #avanzar:hover p{
     opacity: 0;
 }
-/* PAGINA DE SELECCION DE CARROS */
+/*****************
+ PAGINA DE SELECCION DE CARROS
+ ******************** */
 
 .cuerpo {
     background-image: url(../IMG/taller3.jpg);
@@ -283,12 +285,106 @@ body {
     background-color: transparent;
 }
 
+/*****************
+
+ PANTALLA 3  
+
+ **********************/
 
 .designScreen3 {
     background-color: black;
 
     height: 100vh;
     width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloqueIzq {
+    height:100vh;
+    width:33.3vw;
+
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#player11 {
+    height: 50vh;
+    width: 33.3vw;
+
+    background-color: aqua;
+}
+
+#preguntas1 {
+    height: 50vh;
+    width: 33.3vw;
+
+    background-color: yellow;
+}
+
+#bloqueMed {
+    height:100vh;
+    width:33.3vw;
+
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloquecitos2 {
+    height:100vh;
+    width:16.65vw;
+
+    background-color: green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+}
+
+.bloquecitos3 {
+    height:20vh;
+    width:16.65vw;
+
+    background-color: pink;
+    border: solid whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloqueDer {
+    height:100vh;
+    width:33.3vw;
+
+    background-color: blue;
+}
+
+#player22 {
+    height: 50vh;
+    width: 33.3vw;
+
+    background-color: white;
+}
+
+#preguntas2 {
+    height: 50vh;
+    width: 33.3vw;
+
+    background-color: orange;
 }
 
 .designScreen4 {
