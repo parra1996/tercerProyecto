@@ -64,18 +64,17 @@ const selectCar = (nCoche) => {
         let estadisticas = datosCoche.innerHTML = `${team2.marca}<br>${team2.modelo}<br>${team2.velocidad}<br>${team2.peso}<br>${team2.frenada}<br>${team2.combustible}`;
         
     }
-  
-    // falta arreglar, linea 66 fallando
-    if(team1 != "" && team2 != ""){
-        let avance = document.getElementById("avanzar2")
-        avance.classList.add("disponible");
-        console.log(avance)
-        
-
-     }else {
-         console.log("ta fallando") ;
-     }
 }
+// falta arreglar, linea 66 fallando
+if(team1 != "" && team2 != ""){
+    let avance = document.getElementById("avanzar2")
+    avance.classList.add("disponible");
+    console.log(avance)
+    
+
+ }else {
+     console.log("ta fallando") ;
+ }
 
 
 

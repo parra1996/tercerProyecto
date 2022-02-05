@@ -397,3 +397,13 @@ body {
 .seleccionado { 
     background-color: gray;
 }
+
+.right {
+    background:green;
+
+}
+
+.wrong {
+    background-color: red;
+    
+}
