@@ -237,6 +237,8 @@ body {
 }
 
 #avanzar2 {
+    
+
     height: 8vh;
     width: 10vw;
     
@@ -405,5 +407,5 @@ body {
 
 .wrong {
     background-color: red;
-    
+
 }

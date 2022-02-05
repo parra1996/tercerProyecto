@@ -23,8 +23,10 @@ const cuestionary = [
 ];
 
 
-let rightAnswer;
-let currentQuestionIndex = 0; 
+    let rightAnswer;
+    let currentQuestionIndex = 0; 
+    let rightAnswers = 0;
+    let wrongAnswers = 0 ; 
 
 const printHTMLpregunta = (i) => {
     currentQuestionIndex++;
@@ -32,26 +34,43 @@ const printHTMLpregunta = (i) => {
     let a = q.answer ;
     rightAnswer = a[0] ;
 
-    let htmlAnswersArray = a.map(currentA =>`<p id="answer"><button onClick="evaluateAnswer('${currentA}', this)">R</button><span>${currentA}</span></p>`);
+    let htmlAnswersArray = a.map(currentA =>`<p class="answer"><button onClick="evaluateAnswer('${currentA}', this)">R</button><span>${currentA}</span></p>`);
+    
     let htmlAnswers = htmlAnswersArray.join(' ');
     
     let htmlQuestionCode = `<p>${q.question}</p><div>${htmlAnswers}</div>`;
+
     document.getElementById("preguntas1").innerHTML = htmlQuestionCode;
-    document.getElementById("preguntas2").innerHTML = htmlQuestionCode;
+
+    
     
 }
 
 
 
 const evaluateAnswer = (answer, obj) => {
-    document.getElementById("answer").foreach( a => a.classList.remove('right','wrong')) ;
+
+    document.querySelectorAll(".answer").forEach( a => a.classList.remove('right','wrong')) ;
 
     const parentP =  obj.parentNode;
+
     console.log('answer:'+ answer + ', rightAnswer: ' + rightAnswer)
-if(answer == rightAnswer){
+
+    if(answer == rightAnswer){
+    
     parentP.classList.add('right') ;
-}else {
+
+    rightAnswer++;
+
+    document.querySelector(".rightCounter").innerHTML = rightAnswer ;
+
+    }else {
+
     parentP.classList.add('wrong') ;
+
+    wrongAnswers++;
+
+    document.querySelector(".wrongCounter").innerHTML = wrongAnswers ;
 
 }
 }
