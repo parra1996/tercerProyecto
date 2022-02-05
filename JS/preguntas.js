@@ -54,7 +54,7 @@ const evaluateAnswer = (answer, obj) => {
 
     const parentP =  obj.parentNode;
 
-    console.log('answer:'+ answer + ', rightAnswer: ' + rightAnswer)
+    console.log('answer:'+ answer + ', rightAnswer: ' + rightAnswers)
 
     if(answer == rightAnswer){
     
@@ -62,7 +62,7 @@ const evaluateAnswer = (answer, obj) => {
 
     rightAnswer++;
 
-    document.querySelector(".rightCounter").innerHTML = rightAnswer ;
+    document.querySelector(".rightCounter").innerHTML = rightAnswers ;
 
     }else {
 

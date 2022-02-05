@@ -69,9 +69,35 @@ const selectCar = (nCoche) => {
         avance.style.display ="inline" ;
         
     
-     }else {
-         console.log("ta fallando") ;
      }
-    
-}
+     
+     if(team1 == coche1){
+         document.getElementById("player111").src = "IMG/camaro.jpg" ;
+     } else if (team1 == coche2){
+        document.getElementById("player111").src = "IMG/tesla3.jpg" ;
 
+     } else if (team1 == coche3){
+        document.getElementById("player111").src = "IMG/agera2.jpg" ;
+
+     } else if(team1 == coche4){
+        document.getElementById("player111").src = "IMG/bugatti4.jpg" ;
+
+     }
+
+     if(team2 == coche1){
+        document.getElementById("player222").src = "IMG/camaro.jpg" ;
+    } else if (team2 == coche2){
+       document.getElementById("player222").src = "IMG/tesla3.jpg" ;
+
+    } else if (team2 == coche3){
+       document.getElementById("player222").src = "IMG/agera2.jpg" ;
+
+    } else if(team2 == coche4){
+       document.getElementById("player222").src = "IMG/bugatti4.jpg" ;
+
+    }
+
+     
+    }
+
+    

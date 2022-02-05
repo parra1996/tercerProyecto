@@ -389,6 +389,26 @@ body {
     background-color: orange;
 }
 
+#player111 { 
+   background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+
+#player222 { 
+    background-image: inherit;
+     background-size: cover;
+ 
+     display: flex;
+ 
+     height:20vh;
+     width:16.65vw;
+ }
+
 .designScreen4 {
     background-color: violet;
 
