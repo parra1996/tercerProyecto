@@ -359,7 +359,7 @@ body {
     height:20vh;
     width:16.65vw;
 
-    background-color: pink;
+    background-color: black;
     border: solid whitesmoke;
 
     display: flex;
@@ -428,4 +428,12 @@ body {
 .wrong {
     background-color: red;
 
+}
+
+#preguntas1 {
+    width: 5em; 
+    height: 5em;
+
+    background-color: brown;
+    color: white;
 }
