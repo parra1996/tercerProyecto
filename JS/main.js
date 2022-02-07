@@ -40,6 +40,14 @@ const cambiaPantalla = (cambio) => {
    welcome.innerHTML= "Welcome to Tough Racing";
 }, 2000);
 
+let motor2 =  document.getElementById("motor") ;
+
+// setTimeout(() => {
+
+//    motor2.style.display = "none" ;
+
+// }, 5000);
+
 
 const selectCar = (nCoche) => {
     
@@ -48,11 +56,33 @@ const selectCar = (nCoche) => {
         team1 = allCars[nCoche];
         let cochePrimero = document.getElementById(nCoche);
         let datosCoche = document.getElementById("data"+ 1);
+
         //una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
+
         cochePrimero.onclick = "";
         cochePrimero.classList.add("carSelected");
-        datosCoche.innerHTML = `${team1.marca}<br>${team1.modelo}<br>${team1.velocidad}<br>${team1.peso}<br>${team1.frenada}<br>${team1.combustible}`;
+        datosCoche.innerHTML = `${team1.marca}<br>${team1.modelo}<br>${team1.velocidad}<br>${team1.peso}<br>${team1.frenada}<br>${team1.combustible}`;   
+        
+    } else if (team2 == ""){
+        team2 = allCars[nCoche];
+        let cocheSegundo = document.getElementById(nCoche);
+        let datosCoche = document.getElementById("data"+ 2);
 
+        cocheSegundo.onclick = "";
+        cocheSegundo.classList.add("carSelected");
+        let estadisticas = datosCoche.innerHTML = `${team2.marca}<br>${team2.modelo}<br>${team2.velocidad}<br>${team2.peso}<br>${team2.frenada}<br>${team2.combustible}`;      
+    }
+        if(team1 != "" && team2 != ""){
+            let avance = document.getElementById("avanzar2")
+            avance.style.display ="inline" ;
+         }
+
+        racing() ; 
+    }
+    
+    const racing = () => {
+        
+        
         if(team1 == coche1){
 
             document.getElementById("player111").src = "IMG/camaro2.jpg" ;
@@ -69,18 +99,9 @@ const selectCar = (nCoche) => {
    
            document.getElementById("player111").src = "IMG/bugatti4.jpg" ;
    
-        }
-        
-        
-    } else if (team2 == ""){
-        team2 = allCars[nCoche];
-        let cocheSegundo = document.getElementById(nCoche);
-        let datosCoche = document.getElementById("data"+ 2);
+        };
 
-        cocheSegundo.onclick = "";
-        cocheSegundo.classList.add("carSelected");
-        let estadisticas = datosCoche.innerHTML = `${team2.marca}<br>${team2.modelo}<br>${team2.velocidad}<br>${team2.peso}<br>${team2.frenada}<br>${team2.combustible}`;
-
+        
         if(team2 == coche1){
 
             document.getElementById("player222").src = "IMG/camaro2.jpg" ;
@@ -99,12 +120,39 @@ const selectCar = (nCoche) => {
         }
         
     }
-    if(team1 != "" && team2 != ""){
-        let avance = document.getElementById("avanzar2")
-        avance.style.display ="inline" ;
+
+    const driving = () => {
         
-    
-     }
-    }
+        let num = Math.floor(Math.random()*10) ;
+        console.log("el numero aleatorio que salio fue:",num);
+      
+
+        if(num <= 5 && num >= 0){
+            team1.acelerar() ;
+            team2.frenar();
+            
+        } else if(num >= 5 && num <= 10){
+            team2.acelerar();
+            team1.frenar ()
+        }
+
+        let expresion = console.log("la velocidad del jugador1 es de:",
+            team1.velocidad,"y ha recorrido:",team1.metros,"metros.","La velocidad del jugador2 es de:",
+            team2.velocidad,"y ha recorrido:",team2.metros,"metros"
+        );
+
+        let recuadro = document.getElementById("preguntas1");
+
+        recuadro.innerHTML = `<p>${recuadro}</p>` ;
 
     
+    };
+
+
+
+//team1.acelerar();
+
+//     team2.acelerar();
+
+//     console.log(meters1.innerHTML = `<p>${team1.metros}</p>`);
+//     console.log(meters2.innerHTML = `<p>${team2.metros}</p>`);

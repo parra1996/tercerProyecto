@@ -64,7 +64,7 @@ body {
 
     position:absolute;
     left:.5em;
-    top:44.5em;
+    top:35em;
 }
 
 #avanzar {
@@ -132,8 +132,7 @@ body {
 }
 
 .designScreen2 {
-    background-color: rgba(255, 0, 0, 0.137);
-
+    background-color: rgba(255, 255, 255, 0.171);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -225,7 +224,7 @@ body {
 
 
 #carSelection {
-    background-color: rgba(255, 192, 203, 0.658);
+    background-color: rgba(255, 255, 255, 0.171);
 
     display: flex;
     flex: row;
@@ -329,6 +328,22 @@ body {
     background-color: aqua;
 }
 
+.driving {
+    height: 25vh;
+    width: 15vw;
+
+    border-radius: 3em;
+    background-color: red;
+
+    color: white;
+    font-size: 2em;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
 #preguntas1 {
     height: 50vh;
     width: 33.3vw;
@@ -353,34 +368,9 @@ body {
     background-color: pink;
     color: white;
 }
-#respuestas1 {
-    width: 100%; 
-    height: 50%;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
-    background-color: green;
-    color: white;
-}
 
-#respuestas {
-    width: 10%; 
-    height: 20%;
-
-    display: flex;
-    flex-direction: row ;
-    align-items: center;
-    justify-content: center;
-
-    background-color: yellow ;
-    color: black;
-
-    margin: .5em
-
-}
 
 .respuestas3 {
     width: 100%; 
