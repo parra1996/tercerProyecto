@@ -123,36 +123,41 @@ const selectCar = (nCoche) => {
 
     const driving = () => {
         
-        let num = Math.floor(Math.random()*10) ;
-        console.log("el numero aleatorio que salio fue:",num);
+        
+        let metrosPista = 2000 ;
+
+         let num = Math.floor(Math.random()*10) ;
       
 
-        if(num <= 5 && num >= 0){
+            if(num <= 5 && num >= 0){
             team1.acelerar() ;
             team2.frenar();
             
-        } else if(num >= 5 && num <= 10){
+            } else if(num >= 5 && num <= 10){
             team2.acelerar();
             team1.frenar ()
-        }
+            }
 
-        let expresion = console.log("la velocidad del jugador1 es de:",
-            team1.velocidad,"y ha recorrido:",team1.metros,"metros.","La velocidad del jugador2 es de:",
-            team2.velocidad,"y ha recorrido:",team2.metros,"metros"
-        );
+            let recuadro = document.getElementById("preguntas1");
+            let recuadro2 = document.getElementById("preguntas2");
 
-        let recuadro = document.getElementById("preguntas1");
+            recuadro.innerHTML = `<p class="font">Numero aleatorio:${num}<br>La velocidad del jugador es de: ${team1.velocidad}.<br> Ha recorrido:${team1.metros}
+            metros.</p><br>` ;
+            recuadro2.innerHTML = `<p class="font">Numero aleatorio:${num}<br>La velocidad del jugador2 es de:${team2.velocidad}.<br> Ha recorrido:${team2.metros} metros. </p>`
 
-        recuadro.innerHTML = `<p>${recuadro}</p>` ;
-
+            if(team1.metros > metrosPista){
+                ganador = team1 ;
+            } else if(team2.metros > metrosPista){
+                ganador = team2 ;
+            }
+            
+            // if(ganador != "") {
+            //     document.getElementsByClassName("driving").style.display = "none" ;
+            // }
+            
+        };
+        
+        console.log(ganador) ;
+        
     
-    };
 
-
-
-//team1.acelerar();
-
-//     team2.acelerar();
-
-//     console.log(meters1.innerHTML = `<p>${team1.metros}</p>`);
-//     console.log(meters2.innerHTML = `<p>${team2.metros}</p>`);
