@@ -80,7 +80,7 @@
             <div id ="bloqueIzq"class="bloques">
                 <div id="preguntas1" class="bloquecitos">  </div>
                 <div id="player11" class="bloquecitos">
-                    <div class="driving" onclick="driving()" >LET´S DRIVE</div>
+                    <div id="driving" onclick="driving()">LET´S DRIVE</div>
                 </div>
             </div>
 
@@ -116,9 +116,23 @@
 
     <!--pagina de ganador -->
 
-    <section id="pantalla4" style="display:none" onclick="cambiaPantalla(1)">
+    <section id="pantalla4" style="display:none">
 
-        <div class="designScreen4"></div>
+        <div class="designScreen4">
+            <div class="gradas">
+                <div id="celebrar" class="gradas" onclick="celebrar()" ondblclick="noCelebrar()">Celebrar</div>
+               
+
+                <div id="reiniciar" class="gradas" onclick="cleanGame()" >Reiniciar</div>
+            </div>
+            <div id="gradasMed" class="gradas">
+                <p id="ganadorr">El ganador es:</p>
+                <img id="ganador" src="">
+            </div>
+            <div id="gradasDer" class="gradas">
+                <img id="carajito" src="IMG/celebrate-kid.gif" style="display: none;">
+            </div>
+        </div>
 
     </section>
 

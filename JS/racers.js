@@ -51,4 +51,4 @@ let team1 = "";
 
 let team2 = "";
 
-let ganador = "";
+

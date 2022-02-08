@@ -1,10 +1,26 @@
 
 //Funciones
 
+const celebrar = () => {
+
+    let cel = document.getElementById("carajito");
+
+    cel.style.display = "inline" ;
+
+    cel.innerHTML = "<audio autoplay  src='MP3/SUIII.mp3'></audio>"
+}
+const noCelebrar = () => {
+    let cel = document.getElementById("carajito");
+
+    cel.style.display = "none" ;
+}
+
 const cleanGame = () => {
     team1 = "";
     team2 = "";
     ganador = "";
+
+    cambiaPantalla(1);
 }
 
 const cambiaPantalla = (cambio) => {
@@ -41,13 +57,6 @@ const cambiaPantalla = (cambio) => {
 }, 2000);
 
 let motor2 =  document.getElementById("motor") ;
-
-// setTimeout(() => {
-
-//    motor2.style.display = "none" ;
-
-// }, 5000);
-
 
 const selectCar = (nCoche) => {
     
@@ -123,6 +132,7 @@ const selectCar = (nCoche) => {
 
     const driving = () => {
         
+        let ganador="";
         
         let metrosPista = 2000 ;
 
@@ -151,13 +161,39 @@ const selectCar = (nCoche) => {
                 ganador = team2 ;
             }
             
-            // if(ganador != "") {
-            //     document.getElementsByClassName("driving").style.display = "none" ;
-            // }
+            if(ganador != "") {
+                
+                document.getElementById("driving").style.display = "none" ;
+                setTimeout(() => {
+                    cambiaPantalla(4)
+                }, 2000);
+            }
             
-        };
+            let mostrar =  document.getElementById("ganador");
+
+           switch(ganador.marca){
+               case "Tesla":
+                mostrar.src = "IMG/tesla.png"
+               break;
+
+               case "Chevrolet":
+                mostrar.src = "IMG/camaro.png"
+
+               break;
+
+               case "Koenigsegg":
+                mostrar.src = "IMG/agera.png"
+
+               break;
+
+               case "Bugatti":
+                mostrar.src = "IMG/bugatti.png"
+
+               break;
+
+           }
+           document.getElementById("ganadorr").innerHTML = 
+        }
         
-        console.log(ganador) ;
         
     
-
