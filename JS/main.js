@@ -192,7 +192,12 @@ const selectCar = (nCoche) => {
                break;
 
            }
-           document.getElementById("ganadorr").innerHTML = 
+           if(ganador == team1){
+           document.getElementById("ganadorr").innerHTML = `El ganador es:<br>${team1.marca}`
+        }else {
+           document.getElementById("ganadorr").innerHTML = `El ganador es:<br>${team2.marca}`
+            
+        }
         }
         
         
