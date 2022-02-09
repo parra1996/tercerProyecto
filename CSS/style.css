@@ -54,6 +54,7 @@ body {
     font-weight: bolder;
     font-size:8em;
     font-style: italic;
+    
 
     transition: 3s;
 
@@ -666,3 +667,78 @@ body {
     color: rgba(252, 250, 247, 0.527);
     font-weight: bold;
 }
+
+#d {
+    background-image: transparent;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#a {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#b {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#c {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#f {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#g {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#h {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+#i {
+    background-image: inherit;
+    background-size: cover;
+
+    display: flex;
+
+    height:20vh;
+    width:16.65vw;
+}
+
+
