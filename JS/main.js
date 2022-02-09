@@ -55,8 +55,17 @@ const cambiaPantalla = (cambio) => {
  let welcome = document.getElementById("welcome");
 
  setTimeout(() => {
-     welcome.innerHTML= "Welcome to Tough Racing";
-    }, 2000);
+     welcome.innerHTML= "Welcome to...";
+
+     setTimeout(() => {
+     welcome.innerHTML= "TOUGH RACING";
+         
+     }, 3000);
+    }, 1000);
+
+    setTimeout(() => {
+        document.getElementById("pantallazo").classList.add("pantallaNegra") ;
+    }, 4000);
 
 let motor2 =  document.getElementById("motor") ;
 
@@ -132,11 +141,11 @@ const selectCar = (nCoche) => {
         
     }
 
-    const botoncito = () => {
+    // const botoncito = () => {
 
-        document.getElementById("driving").classList.add("driving2")
-       console.log("deberiagarrarlo");        
-    }
+    //     document.getElementById("driving").classList.add("driving2")
+    //    console.log("deberiagarrarlo");        
+    // }
 
     const driving = () => {
         
@@ -144,7 +153,11 @@ const selectCar = (nCoche) => {
         
         let metrosPista = 2000 ;
 
-         let num = Math.floor(Math.random()*10) ;
+        let num = Math.floor(Math.random()*10) ;
+
+        if(team1.metros >= 400){
+
+        }
       
 
             if(num <= 5 && num >= 0){
