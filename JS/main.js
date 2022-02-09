@@ -6,8 +6,10 @@ const celebrar = () => {
     let cel = document.getElementById("carajito");
 
     cel.style.display = "inline" ;
-
-    cel.innerHTML = "<audio autoplay  src='MP3/SUIII.mp3'></audio>"
+    setTimeout(() => {
+        
+        cel.innerHTML = "<audio autoplay  src='MP3/SUIII.mp3'></audio>"
+    }, 500);
 }
 const noCelebrar = () => {
     let cel = document.getElementById("carajito");
@@ -53,8 +55,8 @@ const cambiaPantalla = (cambio) => {
  let welcome = document.getElementById("welcome");
 
  setTimeout(() => {
-   welcome.innerHTML= "Welcome to Tough Racing";
-}, 2000);
+     welcome.innerHTML= "Welcome to Tough Racing";
+    }, 2000);
 
 let motor2 =  document.getElementById("motor") ;
 
@@ -70,7 +72,7 @@ const selectCar = (nCoche) => {
 
         cochePrimero.onclick = "";
         cochePrimero.classList.add("carSelected");
-        datosCoche.innerHTML = `${team1.marca}<br>${team1.modelo}<br>${team1.velocidad}<br>${team1.peso}<br>${team1.frenada}<br>${team1.combustible}`;   
+        datosCoche.innerHTML = `<p class="letricas">${team1.marca}<br>${team1.modelo}<br>Velocidad:${team1.velocidad}km/h<br>Fuerza de frenada:${team1.frenada}N</p>`;   
         
     } else if (team2 == ""){
         team2 = allCars[nCoche];
@@ -79,7 +81,7 @@ const selectCar = (nCoche) => {
 
         cocheSegundo.onclick = "";
         cocheSegundo.classList.add("carSelected");
-        let estadisticas = datosCoche.innerHTML = `${team2.marca}<br>${team2.modelo}<br>${team2.velocidad}<br>${team2.peso}<br>${team2.frenada}<br>${team2.combustible}`;      
+        let estadisticas = datosCoche.innerHTML = `<p class="letricas">${team2.marca}<br>${team2.modelo}<br>Velocidad:${team2.velocidad}km/h<br>Fuerza de frenada:${team2.frenada}N<p>`;      
     }
         if(team1 != "" && team2 != ""){
             let avance = document.getElementById("avanzar2")
@@ -94,37 +96,37 @@ const selectCar = (nCoche) => {
         
         if(team1 == coche1){
 
-            document.getElementById("player111").src = "IMG/camaro2.jpg" ;
+            document.getElementById("player111").src = "IMG/camaro.png" ;
             
         } else if (team1 == coche2){
    
-           document.getElementById("player111").src = "IMG/tesla3.jpg" ;
+           document.getElementById("player111").src = "IMG/tesla.png" ;
    
         } else if (team1 == coche3){
    
-           document.getElementById("player111").src = "IMG/agera2.jpg" ;
+           document.getElementById("player111").src = "IMG/agera.png" ;
    
         } else {
    
-           document.getElementById("player111").src = "IMG/bugatti4.jpg" ;
+           document.getElementById("player111").src = "IMG/bugatti7.png" ;
    
         };
 
         
         if(team2 == coche1){
 
-            document.getElementById("player222").src = "IMG/camaro2.jpg" ;
+            document.getElementById("player222").src = "IMG/camaro.png" ;
     
         } else if (team2 == coche2){
     
-           document.getElementById("player222").src = "IMG/tesla3.jpg" ;
+           document.getElementById("player222").src = "IMG/tesla.png" ;
     
         } else if (team2 == coche3){
     
-           document.getElementById("player222").src = "IMG/agera2.jpg" ;
+           document.getElementById("player222").src = "IMG/agera.png" ;
     
         } else {
-           document.getElementById("player222").src = "IMG/bugatti4.jpg" ;
+           document.getElementById("player222").src = "IMG/bugatti7.png" ;
     
         }
         
@@ -155,6 +157,7 @@ const selectCar = (nCoche) => {
             metros.</p><br>` ;
             recuadro2.innerHTML = `<p class="font">Numero aleatorio:${num}<br>La velocidad del jugador2 es de:${team2.velocidad}.<br> Ha recorrido:${team2.metros} metros. </p>`
 
+            
             if(team1.metros > metrosPista){
                 ganador = team1 ;
             } else if(team2.metros > metrosPista){
@@ -187,7 +190,7 @@ const selectCar = (nCoche) => {
                break;
 
                case "Bugatti":
-                mostrar.src = "IMG/bugatti.png"
+                mostrar.src = "IMG/bugatti7.png"
 
                break;
 

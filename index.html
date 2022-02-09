@@ -57,11 +57,11 @@
          <div id="carSelection" class="designScreen2">
 
              <div id="data1" class="dataCar">
-                 <p>player 1:</p>
+                 <p class="players">player 1:</p>
              </div>
-                <div id ="avanzar2" type="button" style="display:none" onclick="cambiaPantalla(3)"><p>pulsa aqui para avanzar</p></div>
+                <div id ="avanzar2" type="button" style="display:none" onclick="cambiaPantalla(3)"><p id="letraF">pulsa aqui para avanzar</p></div>
              <div id="data2" class="dataCar">
-                <p>player 2:</p>
+                <p class="players">player 2:</p>
              </div>
 
 
@@ -86,19 +86,19 @@
 
             <div id="bloqueMed" class="bloques">
                 <div class="bloquecitos2">
-                    <div class="bloquecitos3">1</div>
-                    <div class="bloquecitos3">2</div>
-                    <div class="bloquecitos3">3</div>
-                    <div class="bloquecitos3">4</div>
-                    <div class="bloquecitos3">
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|
                         <img id="player111" src="">
                     </div>
                 </div>
                 <div class="bloquecitos2">
-                    <div class="bloquecitos3">6</div>
-                    <div class="bloquecitos3">7</div>
-                    <div class="bloquecitos3">8</div>
-                    <div class="bloquecitos3">9</div>
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|</div>
+                    <div class="bloquecitos3">|</div>
                     <div class="bloquecitos3">
                         <img id="player222" src="">
                     </div>
@@ -123,14 +123,14 @@
                 <div id="celebrar" class="gradas" onclick="celebrar()" ondblclick="noCelebrar()">Celebrar</div>
                
 
-                <div id="reiniciar" class="gradas" onclick="cleanGame()" >Reiniciar</div>
+                <div id="reiniciar" class="gradas" onclick="location.reload()" >Reiniciar</div>
             </div>
             <div id="gradasMed" class="gradas">
                 <p id="ganadorr">El ganador es:</p>
                 <img id="ganador" src="">
             </div>
             <div id="gradasDer" class="gradas">
-                <img id="carajito" src="IMG/celebrate-kid.gif" style="display: none;">
+                <img id="carajito" src="IMG/cr7.gif" style="display: none;">
             </div>
         </div>
 
