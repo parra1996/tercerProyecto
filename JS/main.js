@@ -104,7 +104,7 @@ const selectCar = (nCoche) => {
    
         } else if (team1 == coche3){
    
-           document.getElementById("player111").src = "IMG/agera.png" ;
+           document.getElementById("player111").src = "IMG/agera3.png" ;
    
         } else {
    
@@ -123,7 +123,7 @@ const selectCar = (nCoche) => {
     
         } else if (team2 == coche3){
     
-           document.getElementById("player222").src = "IMG/agera.png" ;
+           document.getElementById("player222").src = "IMG/agera3.png" ;
     
         } else {
            document.getElementById("player222").src = "IMG/bugatti7.png" ;
@@ -132,9 +132,15 @@ const selectCar = (nCoche) => {
         
     }
 
+    const botoncito = () => {
+
+        document.getElementById("driving").classList.add("driving2")
+       console.log("deberiagarrarlo");        
+    }
+
     const driving = () => {
         
-        let ganador="";
+         let ganador="";
         
         let metrosPista = 2000 ;
 
@@ -185,7 +191,7 @@ const selectCar = (nCoche) => {
                break;
 
                case "Koenigsegg":
-                mostrar.src = "IMG/agera.png"
+                mostrar.src = "IMG/agera3.png"
 
                break;
 

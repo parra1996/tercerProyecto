@@ -240,7 +240,7 @@ body {
     background-image: url("../IMG/FUEG.png");
     background-size: cover;
 
-    height: 15em;
+    height: 12em;
     width: 10em;
     
     display:flex;
@@ -250,6 +250,8 @@ body {
 
     border-radius: 1em;
 }
+
+
 
 #data1 {
     width: 45vw;
@@ -331,10 +333,26 @@ body {
 
 #driving {
     height: 25vh;
-    width: 15vw;
+    width: 12vw;
 
     border-radius: 3em;
-    background-color: red;
+    background-color: black;
+
+    color: white;
+    font-size: 2em;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+#driving2 {
+    height: 20vh;
+    width: 8vw;
+
+    border-radius: 3em;
+    background-color: black;
 
     color: white;
     font-size: 2em;
@@ -640,9 +658,13 @@ body {
 #letraF {
     text-align: center;
     font-size: 2em;
-    color: rgba(252, 250, 247, 0.527);
+    color: rgba(252, 250, 247, 0.692);
     font-weight: bold;
 
+}
+
+#letraF:hover {
+    color: rgba(255, 68, 0, 0.616);
 }
 
 .players {
