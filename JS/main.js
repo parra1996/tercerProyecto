@@ -11,7 +11,7 @@ const movimiento1 = (div, div2) => {
 
     } else if (team1 == coche3) {
 
-        document.getElementById(div).src = "IMG/agera3.png";
+        document.getElementById(div).src = "IMG/ag.png";
 
     } else {
 
@@ -20,7 +20,7 @@ const movimiento1 = (div, div2) => {
     };
 
     document.getElementById(div2).style.display = "none";
-    document.getElementById(div).style.display ="inline";
+    document.getElementById(div).style.display = "inline";
 }
 
 const movimiento2 = (div, div2) => {
@@ -35,7 +35,7 @@ const movimiento2 = (div, div2) => {
 
     } else if (team2 == coche3) {
 
-        document.getElementById(div).src = "IMG/agera3.png";
+        document.getElementById(div).src = "IMG/ag.png";
 
     } else {
 
@@ -44,14 +44,14 @@ const movimiento2 = (div, div2) => {
     };
 
     document.getElementById(div2).style.display = "none";
-    document.getElementById(div).style.display ="inline";
+    document.getElementById(div).style.display = "inline";
 
 }
 
 const celebrar = () => {
 
     let cel = document.getElementById("carajito");
-    document.getElementById("ganador").style.display="none";
+    document.getElementById("ganador").style.display = "none";
 
     cel.style.display = "inline";
     setTimeout(() => {
@@ -59,6 +59,7 @@ const celebrar = () => {
         cel.innerHTML = "<audio autoplay  src='MP3/SUIII.mp3'></audio>"
     }, 500);
 }
+
 const noCelebrar = () => {
     let cel = document.getElementById("carajito");
 
@@ -100,6 +101,7 @@ const cambiaPantalla = (cambio) => {
 
 
 }
+
 let welcome = document.getElementById("welcome");
 
 setTimeout(() => {
@@ -161,7 +163,7 @@ const racing = () => {
 
     } else if (team1 == coche3) {
 
-        document.getElementById("player111").src = "IMG/agera3.png";
+        document.getElementById("player111").src = "IMG/ag.png";
 
     } else {
 
@@ -180,7 +182,7 @@ const racing = () => {
 
     } else if (team2 == coche3) {
 
-        document.getElementById("player222").src = "IMG/agera3.png";
+        document.getElementById("player222").src = "IMG/ag.png";
 
     } else {
         document.getElementById("player222").src = "IMG/bugatti7.png";
@@ -226,16 +228,16 @@ const driving = () => {
         movimiento1("a", "b");
     };
 
-    if(team2.metros >= 400){
+    if (team2.metros >= 400) {
         movimiento2("i", "player222");
     }
-    if(team2.metros >= 800){
+    if (team2.metros >= 800) {
         movimiento2("h", "i")
     };
-    if(team2.metros >= 1200){
+    if (team2.metros >= 1200) {
         movimiento2("g", "h")
     };
-    if(team2.metros >=1600){
+    if (team2.metros >= 1600) {
         movimiento2("f", "g");
     };
 

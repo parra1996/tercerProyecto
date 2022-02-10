@@ -16,7 +16,7 @@ class Coche {
     }
 
     frenar() {
-        return this.metros -= 35;
+        return this.metros -= 15;
         
     }
 
