@@ -1,4 +1,10 @@
 //Funciones
+
+const producirSonido = () => {
+    document.getElementById("motor").style.display ="inline";
+    
+}
+
 const movimiento1 = (div, div2) => {
 
     if (team1 == coche1) {
