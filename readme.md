@@ -4,9 +4,9 @@ Este proyecto es un videojuego de carreras de 1 vs 1 con la opcion de elegir ent
 
 ###*Tecnologias usadas:* 
 
-![](IMG\html5.png)
-![](IMG\js.png)
-![](IMG\css.png)
+![](http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png)
+
+
 
 
 ###*Futuras actualizaciones.*
