@@ -20,3 +20,6 @@ El juego en un prinicpio esta pensado para ser una trivia, que consiste en que a
 Si deseas revisar el codigo de este proyecto puedes seguir el siguiente enlace :
 
 https://github.com/parra1996/tercerProyecto/tree/master
+
+### *Si deseas ver el proyecto sigue el siguiente enlace:*
+https://parra1996.github.io/tercerProyecto/
