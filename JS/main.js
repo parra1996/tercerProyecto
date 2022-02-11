@@ -1,8 +1,8 @@
 //Funciones
 
 const producirSonido = () => {
-    document.getElementById("motor").style.display ="inline";
     
+        motor.play();
 }
 
 const movimiento1 = (div, div2) => {
@@ -295,6 +295,7 @@ const driving = () => {
             break;
 
     }
+
     if (ganador == team1) {
         document.getElementById("ganadorr").innerHTML = `El ganador es:<br>${team1.marca}`
     } else {
